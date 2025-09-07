@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Odhran's AI Assistant</title>
+</head>
+<body>
+    <h1>Odhran's AI Assistant</h1>
+    <form method="post">
+        <textarea name="user_input" rows="12" cols="80" placeholder="Paste code or ask a question...">{{ user_input }}</textarea><br><br>
+        <button type="submit">Send</button>
+    </form>
+
+    {% if response %}
+    <h2>Response:</h2>
+    <pre>{{ response }}</pre>
+    {% endif %}
+</body>
+</html>
