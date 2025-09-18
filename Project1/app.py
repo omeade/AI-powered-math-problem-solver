@@ -1,5 +1,5 @@
 from flask import Flask, request, render_template
-from main import ask_ai  # import the ask_ai function from your AI code
+from main import ask_ai  
 
 app = Flask(__name__)
 
